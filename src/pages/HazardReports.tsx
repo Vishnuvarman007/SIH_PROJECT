@@ -203,7 +203,7 @@ export default function HazardReports() {
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 h-fit sticky top-24">
           <div className="flex items-center justify-between mb-6">
             <h3 className="text-xl text-white">Report Details</h3>
-            <Badge className={getSeverityColor(selectedReport.severity)} className="border">
+            <Badge className={`${getSeverityColor(selectedReport.severity)} border`}>
               {selectedReport.severity}
             </Badge>
           </div>
